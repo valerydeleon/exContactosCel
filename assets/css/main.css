@@ -2,3 +2,16 @@
     height: 100%;
     background-color: #eeeeee;
 }
+
+.collection .avatar{
+    background-color: #e0e0e0;
+}
+
+.avatar {
+    border-style: none;
+}
+
+.contenedor-contacto{
+    background-color: #e0e0e0;
+    padding: 2px 12px;
+}

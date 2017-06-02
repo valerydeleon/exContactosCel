@@ -1,45 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
-    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-    <!--Let browser know website is optimized for mobile-->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
     <meta charset="utf-8">
+    
     <title>Ex Contactos</title>
   </head>
-  <body>
-    <section class="container">
-       
+  <body>       
+        <!-- inicia header --> 
         <header class="row header">
             <form >
                 <div class="col s12">
                     <h4 class="center">CONTACTOS</h4>
                 </div>
                 <div class="input-field col s10">
-                    <input id="search" type="search" required />
+                    <input id="search" type="search" />
                     <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                 </div>
-                <div class="col s1">
-                    <a class="btn-floating btn-large waves-effect waves-light grey darken-1"><i class="material-icons">add</i></a>
+                <div class="">
+                    <!-- Modal Trigger -->
+                    <button id="agregar" data-target="modal" class="btn-floating btn-large waves-effect waves-light grey darken-1" href="#modal"><i class="material-icons">add</i></button>
                 </div>    
             </form>
         </header>
+        <!-- Termina header -->
         
-        
+        <!-- inicia modal -->
         <section>
-            
+           <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="input-field">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Nombre</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Apellido</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Teléfono</label>
+                        </div>
+                    </div>
+                    
+                    <div class="row modal-footer">
+                        <button data-target="modal" class="modal-action modal-close btn-floating btn-large waves-effect waves-light grey darken-1" type="submit" href="#!"><i class="material-icons">done</i></button>
+                        <button data-target="modal" class="modal-close btn-floating btn-large waves-effect waves-light grey darken-1" href="#!"><i class="material-icons right">clear</i></button>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- Termina modal -->
         
+        <!-- inicia contacto -->
+        <section class="container">
+            <section class="row">
+                <section class="col s12" >
+                   
+                   <div class="contenedor-contacto">
+                        <p class="grey-text text-darken-3 title">Nombre</p>
+                        <p class="grey-text text-darken-3">Apellido</p>
+                        <p class="blue-text text-darken-2">Telefono</p>
+                       
+                   </div>
+                   
+                   
+                    <ul class="collection z-depth-3">
+                        <li class="collection-item avatar">
+                            <i class="large material-icons circle">face</i>
+                            <p class="grey-text text-darken-3 title">Nombre</p>
+                            <p class="grey-text text-darken-3">Apellido</p>
+                            <p class="blue-text text-darken-2">Telefono</p>
+                            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <!-- Termina modal -->
         
-    </section>
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    
+    <script type="text/javascript" src="assets/js/app.js"></script>
   </body>
 </html>
